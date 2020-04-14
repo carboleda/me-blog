@@ -7,7 +7,7 @@ node_js:
 git:
   depth: 3
 script:
-  - yarn build
+  #- yarn build
   - echo 'carlosarboleda.co' > public/CNAME
 deploy:
   provider: pages
