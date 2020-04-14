@@ -2,10 +2,5 @@
 ### **CV - Carlos Fernando Arboleda Garcés**
 https://carlosarboleda.co
 
-# Tools
-- **Color Palette:** https://www.color-hex.com/color-palette/81980
-
-
-```shell
-sudo npm i -D --unsafe-perm favicons-webpack-plugin
-```
+### Template
+https://themes.3rdwavemedia.com/bootstrap-templates/popular/devblog-free-bootstrap-4-blog-template-for-developers/

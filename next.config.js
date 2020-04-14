@@ -2,7 +2,8 @@ const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
     env: {
-        API: isProd ? 'https://us-central1-test-1-600e1.cloudfunctions.net' : 'http://localhost:5001/test-1-600e1/us-central1',
+        //API: isProd ? 'https://us-central1-test-1-600e1.cloudfunctions.net' : 'http://localhost:5001/test-1-600e1/us-central1',
+        API: 'http://localhost:5001/test-1-600e1/us-central1',
         MEDIUM_AUTHOR: '@carboleda',
         NAVBAR_OPTIONS: [
             { name: 'Home', url: '/', icon: 'home' },

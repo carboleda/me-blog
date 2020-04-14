@@ -35,7 +35,7 @@ const Blog = ({ profile, posts }) => {
     );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     const profile = await getProfile();
     const posts = await getPosts();
 

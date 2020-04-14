@@ -31,7 +31,7 @@ const About = ({ profile }) => {
     );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     const profile = await getProfile();
     return { props: { profile } };
 };
