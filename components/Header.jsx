@@ -22,7 +22,7 @@ const Header = ({ profile }) => {
                         {short_bio}
                         <br />
                         <p className="location">{address}</p>
-                        <a href="/about">Descubre más sobre mí</a>
+                        <a href="./about">Descubre más sobre mí</a>
                     </div>
 
                     <Social social={social} />

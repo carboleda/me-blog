@@ -6,8 +6,8 @@ module.exports = {
         MEDIUM_AUTHOR: '@carboleda',
         NAVBAR_OPTIONS: [
             { name: 'Home', url: '/', icon: 'home' },
-            { name: 'Blog', url: '/blog', icon: 'blog' },
-            { name: 'Sobre mí', url: '/about', icon: 'user' },
+            { name: 'Blog', url: './blog', icon: 'blog' },
+            { name: 'Sobre mí', url: './about', icon: 'user' },
         ],
     },
     pageExtensions: ['mdx', 'jsx', 'js', 'ts', 'tsx'],
