@@ -10,7 +10,7 @@ export default ({ children, profile }) => {
                 <title>Blog - Carlos Fernando Arboleda Garcés</title>
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link href="/styles/theme.css" rel="stylesheet" />
+                <link href="./styles/theme.css" rel="stylesheet" />
                 {
                     /*<script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
                         integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7"
@@ -19,7 +19,7 @@ export default ({ children, profile }) => {
                 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"></link>
 
                 <link rel="canonical" href="" />
-                <link rel="shortcut icon" href="/images/icon.png" />
+                <link rel="shortcut icon" href="./images/icon.png" />
                 <meta name="author" content="Carlos Fernando Arboleda Garcés" />
                 <link rel="manifest" href="https://carlosarboleda.co/assets/manifest.json" />
                 <meta name="description" content="Desarrollador Full Stack con más de 9 años de experiencia participando activamente en todo el ciclo de de vida de proyectos de software, desde el análisis hasta la puesta en marcha en producción. Me apasiona el emprendimiento y la construcción de productos de software de alto rendimiento y consumo masivo. Durante los últimos 7 años me he especializado en el desarrollo de aplicaciones móviles Android y Backend." />
