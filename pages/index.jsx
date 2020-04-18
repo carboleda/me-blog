@@ -20,6 +20,23 @@ const Index = ({ profile }) => (
                 <br />
             </div>
         </Layout>
+        <style jsx>
+            {
+                `
+                iframe {
+                    width: 450px;
+                    height: 250px;
+                }
+
+                @media (min-width: 992px) {
+                    iframe {
+                        width: 560px;
+                        height: 315px;
+                    }
+                }
+                `
+            }
+        </style>
     </div>
 );
 
