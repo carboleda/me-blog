@@ -1,7 +1,7 @@
 {
     "name": "me-blog",
     "version": "1.0.0",
-    "description": "",
+    "description": "Blog personal - Recopilación del todo el contenido que comparto en Medium, Slides y Youtube en un solo lugar.",
     "main": "index.js",
     "scripts": {
         "dev": "next",
@@ -9,16 +9,21 @@
         "build:s": "next build && next export",
         "start": "next start"
     },
-    "keywords": [],
-    "author": "",
+    "keywords": [
+        "nodejs",
+        "nextjs",
+        "javascript",
+        "html",
+        "css"
+    ],
+    "author": "Carlos Arboleda",
     "license": "ISC",
     "dependencies": {
         "isomorphic-unfetch": "3.0.0",
         "moment": "2.24.0",
         "next": "9.3.4",
         "react": "16.13.1",
-        "react-dom": "16.13.1",
-        "react-photo-gallery": "8.0.0"
+        "react-dom": "16.13.1"
     },
     "devDependencies": {}
 }
