@@ -7,7 +7,7 @@ const Header = ({ profile }) => {
     return (
         <header className="header text-center">
             <h1 className="blog-name pt-lg-4 mb-0">
-                <a href="/">
+                <a href="./">
                     {name}
                     <br />
                     <span>{profession}</span>
