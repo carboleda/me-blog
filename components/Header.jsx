@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Social from './Social';
 import Navbar from './Navbar';
 import NavbarOptions from './NavbarOptions';
@@ -16,7 +17,7 @@ const Header = ({ profile }) => {
 
             <Navbar>
                 <div className="profile-section pt-3 pt-lg-0">
-                    <img className="profile-image mb-2 rounded-circle mx-auto" src={avatar} alt="image" />
+                    <Image className="profile-image mb-2 rounded-circle mx-auto" src={avatar} alt="image" />
 
                     <div className="bio mb-3">
                         {short_bio}
@@ -32,7 +33,7 @@ const Header = ({ profile }) => {
                 <NavbarOptions />
 
                 <div className="my-2 my-md-3">
-                    <a className="btn btn-primary" href="mailto:arbofercho@gmail.com" target="_blank">Contactar</a>
+                    <a className="btn btn-primary" href="mailto:arbofercho@gmail.com" target="_blank" rel="noreferrer">Contactar</a>
                 </div>
             </Navbar>
             <style jsx>
