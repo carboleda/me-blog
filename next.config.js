@@ -12,6 +12,9 @@ module.exports = {
         ],
     },
     pageExtensions: ['mdx', 'jsx', 'js', 'ts', 'tsx'],
+    images: {
+        domains: ['firebasestorage.googleapis.com', '*.medium.com'],
+    },
     generateBuildId: async () => {
         const version = require('./package.json').version;
         return `me-blog-v${version}`;
