@@ -40,7 +40,7 @@ const Skills = props => (
 
                 @keyframes move {
                     0% { background-position: 0 0; }
-                    100% { background-position: 50px 50px};
+                    100% { background-position: 50px 50px }
                 }
 
                 .skillsLine span {

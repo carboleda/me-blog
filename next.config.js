@@ -1,6 +1,7 @@
 const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
+    reactStrictMode: true,
     env: {
         API: isProd ? 'https://us-central1-test-1-600e1.cloudfunctions.net' : 'http://localhost:5001/test-1-600e1/us-central1',
         MEDIUM_AUTHOR: '@carboleda',
@@ -19,7 +20,9 @@ module.exports = {
         // Note: we provide webpack above so you should not `require` it
         // Perform customizations to webpack config
         // Important: return the modified config
-        config.plugins.push(new webpack.IgnorePlugin(/\/__tests__\//));
+        config.plugins.push(new webpack.IgnorePlugin({
+            resourceRegExp: /\/__tests__\//
+        }));
         return config;
     },
     webpackDevMiddleware: config => {

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Layout from '../components/Layout';
 import Education from '../components/Education';
 import Experience from '../components/Experience';
@@ -17,7 +18,7 @@ const About = ({ profile }) => {
                     <PStyled name={profile.bio} />
 
                     <figure>
-                        <img className="img-fluid" src="/images/kotlin_everywhere_present.png" alt="image"/>
+                        <Image className="img-fluid" src="/images/kotlin_everywhere_present.png" alt="image"/>
                     </figure>
 
                     <br />

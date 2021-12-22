@@ -1,13 +1,15 @@
 {
     "name": "me-blog",
+    "private": true,
     "version": "1.0.0",
     "description": "Blog personal - Recopilación del todo el contenido que comparto en Medium, Slides y Youtube en un solo lugar.",
     "main": "index.js",
     "scripts": {
-        "dev": "next",
+        "dev": "next dev",
         "build": "next build",
         "build:s": "next build && next export",
-        "start": "next start"
+        "start": "next start",
+        "lint": "next lint"
     },
     "keywords": [
         "nodejs",
@@ -21,9 +23,12 @@
     "dependencies": {
         "isomorphic-unfetch": "3.0.0",
         "moment": "2.24.0",
-        "next": "9.3.4",
-        "react": "16.13.1",
-        "react-dom": "16.13.1"
+        "next": "12.0.7",
+        "react": "17.0.2",
+        "react-dom": "17.0.2"
     },
-    "devDependencies": {}
+    "devDependencies": {
+      "eslint": "8.5.0",
+      "eslint-config-next": "12.0.7"
+    }
 }

@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Header from './Header';
 import Footer from './Footer';
 
-export default ({ children, profile }) => {
+const Layout = ({ children, profile }) => {
     return (
         <>
             <Head>
@@ -39,12 +39,30 @@ export default ({ children, profile }) => {
                 <meta name="og:url" content="" />
                 <meta name="og:site_name" content="" />
                 <meta name="og:image" content="https://firebasestorage.googleapis.com/v0/b/test-1-600e1.appspot.com/o/me-cv%2Fcfag_kotlin_everywhere2019_crop.png?alt=media" />
+
+                {/* Google Tag Manager */}
+                <script dangerouslySetInnerHTML={{
+                    __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                    })(window,document,'script','dataLayer','GTM-PD5N6D6')`
+                }} />
+                {/* End Google Tag Manager */}
             </Head>
             <Header profile={profile} />
             <div className="main-wrapper">
                 {children}
                 <Footer />
+                {/* Google Tag Manager (noscript) */}
+                <noscript dangerouslySetInnerHTML={{
+                    __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD5N6D6"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>`
+                }} />
+                {/* End Google Tag Manager (noscript) */}
             </div>
         </>
     )
 };
+
+export default Layout;
