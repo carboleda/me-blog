@@ -1,11 +1,9 @@
-import Image from 'next/image';
-
 const BlogPost = ({data}) => {
     const { title, image, link, createAt, description } = data;
     return (
         <div className="item mb-5">
             <div className="media">
-                <Image className="mr-3 img-fluid post-thumb d-none d-md-flex" src={image} alt="image" />
+                <img className="mr-3 img-fluid post-thumb d-none d-md-flex" src={image} alt="image" />
                 <div className="media-body">
                     <h3 className="title mb-1">
                         <a href={link} target="_blank" rel="noreferrer">{title}</a>

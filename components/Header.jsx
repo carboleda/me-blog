@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Social from './Social';
 import Navbar from './Navbar';
 import NavbarOptions from './NavbarOptions';
@@ -17,7 +16,8 @@ const Header = ({ profile }) => {
 
             <Navbar>
                 <div className="profile-section pt-3 pt-lg-0">
-                    <Image className="profile-image mb-2 rounded-circle mx-auto" src={avatar} alt="image" />
+                    <img className="profile-image mb-2 rounded-circle mx-auto"
+                        src={avatar} alt="image" width="100px" height="100px" />
 
                     <div className="bio mb-3">
                         {short_bio}
@@ -47,6 +47,7 @@ const Header = ({ profile }) => {
 
                     .profile-section .profile-image {
                         max-width: 130px;
+                        margin-bottom: 0px !important;
                     }
 
                     .blog-name span {
